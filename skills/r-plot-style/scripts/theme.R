@@ -21,122 +21,122 @@ is_control_label <- function(x) {
 }
 
 # Color Tokens
-COLOR_BASE      <- "#45465e" # Qing Dai (青黛 - Slate Navy Graphite, L* = 30.5)
-COLOR_REFERENCE <- "#A8A19C" # Shao Yi (绍衣 - Earthy Stone Mid, L* = 66.7)
+COLOR_BASE      <- "#45465e" 
+COLOR_REFERENCE <- "#A8A19C" 
 
 # Backward-compatibility aliases
 COLOR_PRIMARY   <- COLOR_BASE
 COLOR_CONTROL   <- COLOR_REFERENCE
-COLOR_ACCENT    <- "#A76283" # Plum (紫茎屏风)
+COLOR_ACCENT    <- "#A76283" 
 
-# Ordered Series Pool (Botanical Sequence with Balanced Lightness)
+# Ordered Series 
 PALETTE_SERIES <- c(
-  "#3271AE", # 1. Blue   (青冥 / Qing Ming - Core Mineral Blue, L* = 46.4)
-  "#C12C1F", # 2. Red    (珊瑚赫 / Shan Hu He - Crimson Red Core, L* = 43.1)
-  "#4C8045", # 3. Green  (翠微 / Cui Wei - Emerald Pine Green, L* = 48.8)
-  "#C67915", # 4. Gold   (柘黄 / Zhe Huang - Imperial Gold Ochre, L* = 57.8)
-  "#A76283", # 5. Plum   (紫茎屏风 / Zi Jing Ping Feng - Mulberry Plum, L* = 50.2)
-  "#3D8E86", # 6. Teal   (铜青 / Tong Qing - Antique Copper Teal, L* = 54.1)
-  "#EA5514", # 7. Orange (黄丹 / Huang Dan - Vibrant Minium Orange, L* = 56.1)
-  "#6B798E", # 8. Slate  (菘蓝 / Song Lan - Pine Slate Blue, L* = 50.4)
-  "#BA5140"  # 9. Rust   (纁黄 / Xun Huang - Sunset Earth Rust, L* = 47.9)
+  "#3271AE", # 1. Blue   
+  "#C12C1F", # 2. Red    
+  "#4C8045", # 3. Green  
+  "#C67915", # 4. Gold   
+  "#A76283", # 5. Plum   
+  "#3D8E86", # 6. Teal   
+  "#EA5514", # 7. Orange 
+  "#6B798E", # 8. Slate  
+  "#BA5140"  # 9. Rust   
 )
 
 # ------------------------------------------------------------------------------
-# 2. 5-Step Continuous Gradients (Chinese Traditional Colors)
+# 2. 5-Step Continuous Gradients
 # ------------------------------------------------------------------------------
 
 # 1. Earthy Grayscale / Graphite Gradient (Light -> Dark)
 GRADIENT_GRAPHITE <- c(
-  "#D3CBC5", # 1. 藕丝秋半 (Ou Si Qiu Ban / Sand - Lightest, L* = 82.2)
-  "#A8A19C", # 2. 绍衣   (Shao Yi - Earthy Stone Mid / COLOR_REFERENCE, L* = 66.7)
-  "#6B798E", # 3. 菘蓝   (Song Lan - Pine Slate Mid, L* = 50.4)
-  "#45465e", # 4. 青黛   (Qing Dai - Slate Navy Graphite Base / COLOR_BASE, L* = 30.5)
-  "#31322C"  # 5. 京元   (Jing Yuan - Soot Charcoal Dark, L* = 20.5)
+  "#D3CBC5", 
+  "#A8A19C", 
+  "#6B798E", 
+  "#45465e", 
+  "#31322C"  
 )
 
-# 2. Blue Gradient (青冥系)
+# 2. Blue Gradient 
 GRADIENT_BLUE <- c(
-  "#D4E5EF", # 1. 月白   (Yue Bai - Tint)
-  "#BCD4E7", # 2. 星郎   (Xing Lang - Soft Sky)
-  "#4994C4", # 3. 孔雀蓝 (Kong Que Lan - Peacock Blue Mid)
-  "#3271AE", # 4. 青冥   (Qing Ming - Mineral Blue Core)
-  "#003460"  # 5. 帝释青 (Di Shi Qing - Midnight Navy Dark)
+  "#D4E5EF", 
+  "#BCD4E7", 
+  "#4994C4", 
+  "#3271AE", 
+  "#003460"  
 )
 
-# 3. Red Gradient (珊瑚赫 / 朱樱系 - Deep Cherry Progression)
+# 3. Red Gradient 
 GRADIENT_RED <- c(
-  "#E7CAD3", # 1. 银红   (Yin Hong - Tint)
-  "#CF929E", # 2. 雌霓   (Ci Ni - Soft Coral Pink)
-  "#DD6B7B", # 3. 渥赭   (Wo Zhe - Vibrant Coral Rose Mid)
-  "#C12C1F", # 4. 珊瑚赫 (Shan Hu He - Palette Core Red)
-  "#8F1D22"  # 5. 朱樱   (Zhu Ying - Deep Cherry Crimson Dark)
+  "#E7CAD3", 
+  "#CF929E", 
+  "#DD6B7B", 
+  "#C12C1F", 
+  "#8F1D22"  
 )
 
-# 4. Green Gradient (翠微 / 翠虬系 - Botanical Pine Progression, Step 4 = PALETTE_SERIES[3])
+# 4. Green Gradient 
 GRADIENT_GREEN <- c(
-  "#CAD7C5", # 1. 葭菼   (Jia Tan - Tint Mist, L* = 84.6)
-  "#99BCAC", # 2. 苍筤   (Cang Lang - Soft Sprout Sage, L* = 73.4)
-  "#68945C", # 3. 庭芜绿 (Ting Wu Lv - Botanical Green Mid, L* = 57.0)
-  "#4C8045", # 4. 翠微   (Cui Wei - Emerald Pine Green Core, L* = 48.8)
-  "#446A37"  # 5. 翠虬   (Cui Qiu - Deep Pine Evergreen Dark, L* = 40.9)
+  "#CAD7C5", 
+  "#99BCAC", 
+  "#68945C", 
+  "#4C8045", 
+  "#446A37"  
 )
-GRADIENT_SAGE <- GRADIENT_GREEN # Compatibility alias
 
-# 5. Gold Gradient (柘黄 / 黄流系 - Radiant Amber Progression, Step 4 = PALETTE_SERIES[4])
+
+# 5. Gold Gradient 
 GRADIENT_GOLD <- c(
-  "#FFFBC7", # 1. 半见   (Ban Jian - Pale Primrose Cream Tint, L* = 97.8)
-  "#FAC03D", # 2. 栀子   (Zhi Zi - Soft Amber Gold, L* = 80.9)
-  "#DA9233", # 3. 杏子   (Xing Zi - Apricot Gold Mid, L* = 66.3)
-  "#C67915", # 4. 柘黄   (Zhe Huang - Imperial Gold Ochre Core, L* = 57.8)
-  "#9F6027"  # 5. 黄流   (Huang Liu - Deep Ochre Gold Dark, L* = 46.8)
+  "#FFFBC7", 
+  "#FAC03D", 
+  "#DA9233", 
+  "#C67915", 
+  "#9F6027"  
 )
 
-# 6. Plum / Purple Gradient (紫茎屏风 / 凝夜系 - Mulberry Plum Progression, Step 4 = PALETTE_SERIES[5])
+# 6. Purple Gradient 
 GRADIENT_PLUM <- c(
-  "#DCC7E1", # 1. 昌荣   (Chang Rong - Soft Lilac Tint, L* = 82.6)
-  "#BBA1CB", # 2. 紫薄汗 (Zi Bao Han - Soft Lavender, L* = 69.7)
-  "#9B8EA9", # 3. 紫菂   (Zi Di - Plum Mauve Mid, L* = 60.9)
-  "#A76283", # 4. 紫茎屏风 (Zi Jing Ping Feng - Mulberry Plum Core, L* = 50.2)
-  "#422256"  # 5. 凝夜紫 (Ning Ye Zi - Midnight Dark Purple, L* = 19.9)
+  "#DCC7E1", 
+  "#BBA1CB", 
+  "#9B8EA9", 
+  "#A76283", 
+  "#422256"  
 )
-GRADIENT_LILAC <- GRADIENT_PLUM # Compatibility alias
 
-# 7. Teal Gradient (铜青 / 石绿系 - Antique Copper Cyan Progression, Step 4 = PALETTE_SERIES[6])
+
+# 7. Teal Gradient 
 GRADIENT_TEAL <- c(
-  "#D4DDE1", # 1. 素采   (Su Cai - Pale Cyan Tint, L* = 87.6)
-  "#88BFB8", # 2. 繱犗   (Cong Jie - Soft Seafoam Teal, L* = 73.5)
-  "#5DA39D", # 3. 二绿   (Er Lv - Mineral Teal Mid, L* = 62.5)
-  "#3D8E86", # 4. 铜青   (Tong Qing - Antique Copper Teal Core, L* = 54.1)
-  "#206864"  # 5. 石绿   (Shi Lv - Deep Forest Teal Dark, L* = 39.8)
+  "#D4DDE1", 
+  "#88BFB8", 
+  "#5DA39D", 
+  "#3D8E86", 
+  "#206864"  
 )
 
-# 8. Orange Gradient (黄丹 / 韎韐系 - Minium Orange Progression, Step 4 = PALETTE_SERIES[7])
+# 8. Orange Gradient 
 GRADIENT_ORANGE <- c(
-  "#ECD9C7", # 1. 弗肯红 (Fu Ken Hong - Soft Peach Tint, L* = 87.8)
-  "#F5B087", # 2. 骍刚   (Xing Gang - Soft Apricot Orange, L* = 77.4)
-  "#F18F60", # 3. 赪霞   (Cheng Xia - Radiant Coral Orange Mid, L* = 68.9)
-  "#EA5514", # 4. 黄丹   (Huang Dan - Vibrant Minium Orange Core, L* = 56.1)
-  "#9F5221"  # 5. 韎韐   (Mei Ge - Deep Madder Leather Dark, L* = 43.5)
+  "#ECD9C7", 
+  "#F5B087", 
+  "#F18F60", 
+  "#EA5514", 
+  "#9F5221"  
 )
 
 # ------------------------------------------------------------------------------
 # 3. Continuous & Divergent Palette Vectors (Heatmaps & Hexbins)
 # ------------------------------------------------------------------------------
 
-# 1. Divergent Blue-White-Red Palette (Qing Ming -> White -> Shan Hu He)
+# 1. Divergent Blue-White-Red Palette 
 PALETTE_DIVERGENT_BLUE_RED <- c(
-  "#003460", # 1.  帝释青 (Di Shi Qing - Midnight Navy Dark)
-  "#3271AE", # 2.  青冥   (Qing Ming - Mineral Blue Core)
-  "#4994C4", # 3.  孔雀蓝 (Kong Que Lan - Peacock Blue Mid)
-  "#BCD4E7", # 4.  星郎   (Xing Lang - Soft Sky)
-  "#D4E5EF", # 5.  月白   (Yue Bai - Blue Tint)
-  "#FFFFFF", # 6.  纯白   (Pure Center Neutral White)
-  "#E7CAD3", # 7.  银红   (Yin Hong - Red Tint)
-  "#CF929E", # 8.  雌霓   (Ci Ni - Soft Coral Pink)
-  "#DD6B7B", # 9.  渥赭   (Wo Zhe - Vibrant Coral Rose Mid)
-  "#C12C1F", # 10. 珊瑚赫 (Shan Hu He - Crimson Red Core)
-  "#8F1D22"  # 11. 朱樱   (Zhu Ying - Deep Cherry Crimson Dark)
+  "#003460", 
+  "#3271AE", 
+  "#4994C4", 
+  "#BCD4E7", 
+  "#D4E5EF", 
+  "#FFFFFF", 
+  "#E7CAD3", 
+  "#CF929E", 
+  "#DD6B7B", 
+  "#C12C1F", 
+  "#8F1D22" 
 )
 
 # 2. Sequential Continuous Palette Anchors (Smooth Light -> Dark)
